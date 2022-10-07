@@ -9,16 +9,24 @@
 <br>
 <br>
 
+<style>
+    .css_input {
+    color: yellow;
+background-color: red
+}
+</style>
+
 <form action="{% url 'thanks_page' %}" method="POST">
     {% csrf_token %}
-    <label>Имя</label>
-    <label>
-        <input name="name">
-    </label>
-    <label> Телефон</label>
-    <label>
-        <input name='phone'>
-    </label>
+    {{ form.as_p}}
+<!--    <label>Имя</label>-->
+<!--    <label>-->
+<!--        <input name="name">-->
+<!--    </label>-->
+<!--    <label> Телефон</label>-->
+<!--    <label>-->
+<!--        <input name='phone'>-->
+<!--    </label>-->
     <button type="submit">ОТПРАВИТЬ</button>
 </form>
 
