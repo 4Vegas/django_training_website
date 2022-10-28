@@ -2,6 +2,9 @@
 
 <!doctype html>
 <html lang="ru">
+
+{% block head %}
+
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -27,14 +30,17 @@
       </div>
 	</nav>
 
+{% endblock %}
+
 {% block index %}
 
 {% endblock %}
 
-{% block thanks %}
+<!--{% block thanks %}-->
 
-{% endblock %}
+<!--{% endblock %}-->
 
+{% block footer %}
 <footer>
   		<div class="container">
   			<nav class="navbar navbar-light bg-light container">
@@ -59,3 +65,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   </body>
 </html>
+{% endblock %}
